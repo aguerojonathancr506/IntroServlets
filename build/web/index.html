@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Conversor</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Conversor de Temperaturas</h2>
+        
+        <form action="TemperaturaServlet" method="post">
+
+            <label>Temperatura:</label>
+            <input type="number" step="any" name="temperatura" required>
+
+            <br><br>
+        
+        <select name="conversion">
+            <option value="Select an option" selected>Select an option</option>
+            <option value="Celsius → Fahrenheit">Celsius → Fahrenheit</option>
+            <option value="Fahrenheit → Celsius">Fahrenheit → Celsius</option>
+            <option value="Celsius → Kelvin">Celsius → Kelvin</option>
+            <option value="Kelvin → Celsius">Kelvin → Celsius</option>
+        </select>
+            
+            <br><br>
+        
+        <input type="submit" value="Submit">
+                
+    </body>
+</html>
