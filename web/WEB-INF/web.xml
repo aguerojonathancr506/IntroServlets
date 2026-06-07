@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="6.1" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_1.xsd">
     <servlet>
-        <servlet-name>TemperaturaServlet</servlet-name>
-        <servlet-class>servlet.TemperaturaServlet</servlet-class>
+        <servlet-name>EmployeeServlet</servlet-name>
+        <servlet-class>EmployeeServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>TemperaturaServlet</servlet-name>
-        <url-pattern>/TemperaturaServlet</url-pattern>
+        <servlet-name>EmployeeServlet</servlet-name>
+        <url-pattern>/EmployeeServlet</url-pattern>
     </servlet-mapping>
 </web-app>

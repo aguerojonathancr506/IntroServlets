@@ -4,32 +4,43 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
 -->
 <html>
-    <head>
-        <title>Conversor</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <h2>Conversor de Temperaturas</h2>
-        
-        <form action="TemperaturaServlet" method="post">
+<head>
+    <title>Empresa - Empleados</title>
+</head>
 
-            <label>Temperatura:</label>
-            <input type="number" step="any" name="temperatura" required>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Empresa - Empleados</title>
+</head>
 
-            <br><br>
-        
-        <select name="conversion">
-            <option value="Select an option" selected>Select an option</option>
-            <option value="Celsius → Fahrenheit">Celsius → Fahrenheit</option>
-            <option value="Fahrenheit → Celsius">Fahrenheit → Celsius</option>
-            <option value="Celsius → Kelvin">Celsius → Kelvin</option>
-            <option value="Kelvin → Celsius">Kelvin → Celsius</option>
-        </select>
-            
-            <br><br>
-        
-        <input type="submit" value="Submit">
-                
-    </body>
+<body>
+
+    <h1>Gestion de Empleados</h1>
+
+    <h2>Ver empleados</h2>
+    <a href="EmployeeServlet">
+        <button>Mostrar empleados</button>
+    </a>
+
+    <hr>
+
+    <h2>Insertar empleado</h2>
+
+    <form action="EmployeeServlet" method="POST">
+
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre" required>
+        <br><br>
+
+        <label>Departamento:</label><br>
+        <input type="text" name="departamento" required>
+        <br><br>
+
+        <input type="submit" value="Guardar empleado">
+
+    </form>
+
+</body>
 </html>
