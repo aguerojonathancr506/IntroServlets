@@ -1,0 +1,18 @@
+CREATE DATABASE IF NOT EXISTS crud_libros;
+USE crud_libros;
+
+CREATE TABLE IF NOT EXISTS libros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(150) NOT NULL,
+    autor VARCHAR(100) NOT NULL,
+    descripcion TEXT,
+    imagen_url VARCHAR(500)
+);
+
+INSERT INTO libros (titulo, autor, descripcion, imagen_url) VALUES
+('Cien años de soledad', 'Gabriel García Márquez',
+ 'Novela emblemática del realismo mágico.',
+ 'https://th.bing.com/th/id/R.9f07a7a5bcf1897d6b770a2d73596fe5?rik=Ye%2fH29UkRvNhgA&riu=http%3a%2f%2fsobrelibros.net%2fwp-content%2fuploads%2f2010%2f06%2fcien_anos_de_soledad.jpg&ehk=YKKgzq3vgRXRtyeiZjvUTGHw072M1GbBGLApboeG49Y%3d&risl=&pid=ImgRaw&r=0'),
+('El principito', 'Antoine de Saint-Exupéry',
+ 'Fábula filosófica sobre la infancia y la vida adulta.',
+ 'https://m.media-amazon.com/images/I/713nEf55PkL._SL1500_.jpg');

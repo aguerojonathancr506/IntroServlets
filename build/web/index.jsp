@@ -1,5 +1,9 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%-- 
+    Document   : index.jsp
+    Created on : Jul 2, 2026, 11:14:44?PM
+    Author     : aguer
+--%>
+
 <%
-    // Redirigir al servlet principal
-    response.sendRedirect("ProductoServlet?accion=listar");
+    response.sendRedirect("libros?action=listar");
 %>
